@@ -1,0 +1,485 @@
+{
+  "stg": {
+    "H984216": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 60,
+      "core_instance_count_daily": 60,
+      "partition_multiplier": "8",
+      "spark_configs": [
+        "spark.sql.broadcastTimeout=3600",
+        "spark.sql.autoBroadcastJoinThreshold=-1"
+      ]
+    },
+    "H406239": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 40,
+      "core_instance_count_daily": 60,
+      "partition_multiplier": "4",
+      "spark_configs": [
+        "spark.sql.broadcastTimeout=3600",
+        "spark.sql.shuffle.partitions=1200",
+        "spark.shuffle.registration.timeout=120000",
+        "spark.shuffle.registration.maxAttempts=5",
+        "spark.stage.maxConsecutiveAttempts=10",
+        "spark.shuffle.file.buffer=1MB",
+        "spark.io.compression.snappy.blockSize=512KB"
+      ]
+    },
+    "H302436": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 20,
+      "core_instance_count_daily": 20,
+      "partition_multiplier": "4",
+      "spark_configs": [
+        "spark.sql.broadcastTimeout=3600"
+      ]
+    },
+    "H592196": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 40,
+      "core_instance_count_daily": 20,
+      "partition_multiplier": "4",
+      "spark_configs": [
+        "spark.sql.broadcastTimeout=3600",
+        "spark.sql.shuffle.partitions=400",
+        "spark.shuffle.registration.timeout=120000",
+        "spark.shuffle.registration.maxAttempts=5",
+        "spark.stage.maxConsecutiveAttempts=10",
+        "spark.shuffle.file.buffer=1MB",
+        "spark.io.compression.snappy.blockSize=512KB"
+      ]
+    },
+    "H218562": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 20,
+      "core_instance_count_daily": 20
+    },
+    "H834852": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 20,
+      "core_instance_count_daily": 20,
+      "partition_multiplier": "0.1",
+      "spark_configs": [
+        "spark.sql.broadcastTimeout=3600"
+      ]
+    }
+  },
+  "prd": {
+    "H053731": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 15,
+      "core_instance_count_daily": 15,
+      "partition_multiplier": "1",
+      "spark_configs": [
+        "spark.sql.broadcastTimeout=3600",
+        "spark.sql.shuffle.partitions=200",
+        "spark.shuffle.registration.timeout=120000",
+        "spark.shuffle.registration.maxAttempts=5",
+        "spark.stage.maxConsecutiveAttempts=10",
+        "spark.shuffle.file.buffer=1MB",
+        "spark.io.compression.snappy.blockSize=512KB"
+      ]
+    },
+    "H200272": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 10,
+      "core_instance_count_daily": 10,
+      "partition_multiplier": "1"
+    },
+    "H218562": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 20,
+      "core_instance_count_daily": 20
+    },
+    "H302436": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 20,
+      "core_instance_count_daily": 20,
+      "partition_multiplier": "1"
+    },
+
+    "H319046": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 20,
+      "core_instance_count_daily": 20,
+      "partition_multiplier": "1"
+    },
+    "H406239": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 40,
+      "core_instance_count_daily": 60,
+      "partition_multiplier": "4",
+      "spark_configs": [
+        "spark.sql.broadcastTimeout=3600",
+        "spark.sql.shuffle.partitions=1200",
+        "spark.shuffle.registration.timeout=120000",
+        "spark.shuffle.registration.maxAttempts=5",
+        "spark.stage.maxConsecutiveAttempts=10",
+        "spark.shuffle.file.buffer=1MB",
+        "spark.io.compression.snappy.blockSize=512KB"
+      ]
+    },
+    "H448464": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 20,
+      "core_instance_count_daily": 20,
+      "partition_multiplier": "1"
+    },
+    "H522275": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 20,
+      "core_instance_count_daily": 20,
+      "partition_multiplier": "1"
+    },
+    "H553173": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 10,
+      "core_instance_count_daily": 10,
+      "partition_multiplier": "1",
+      "spark_configs": [
+        "spark.sql.broadcastTimeout=3600",
+        "spark.sql.shuffle.partitions=200",
+        "spark.shuffle.registration.timeout=120000",
+        "spark.shuffle.registration.maxAttempts=5",
+        "spark.stage.maxConsecutiveAttempts=10",
+        "spark.shuffle.file.buffer=1MB",
+        "spark.io.compression.snappy.blockSize=512KB"
+      ]
+    },
+    "H558781": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 20,
+      "core_instance_count_daily": 20,
+      "partition_multiplier": "1"
+    },
+    "H592196": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 40,
+      "core_instance_count_daily": 20,
+      "partition_multiplier": "4",
+      "spark_configs": [
+        "spark.sql.broadcastTimeout=3600",
+        "spark.sql.shuffle.partitions=400",
+        "spark.shuffle.registration.timeout=120000",
+        "spark.shuffle.registration.maxAttempts=5",
+        "spark.stage.maxConsecutiveAttempts=10",
+        "spark.shuffle.file.buffer=1MB",
+        "spark.io.compression.snappy.blockSize=512KB"
+      ]
+    },
+    "H623622": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 20,
+      "core_instance_count_daily": 20,
+      "partition_multiplier": "1"
+    },
+    "H636663": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 20,
+      "core_instance_count_daily": 20,
+      "partition_multiplier": "1"
+    },
+    "H642453": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 5,
+      "core_instance_count_daily": 5,
+      "partition_multiplier": "1"
+    },
+    "H704847": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 40,
+      "core_instance_count_daily": 20,
+      "partition_multiplier": "2",
+      "spark_configs": [
+        "spark.sql.broadcastTimeout=3600",
+        "spark.sql.shuffle.partitions=400",
+        "spark.shuffle.registration.timeout=120000",
+        "spark.shuffle.registration.maxAttempts=5",
+        "spark.stage.maxConsecutiveAttempts=10",
+        "spark.shuffle.file.buffer=1MB",
+        "spark.io.compression.snappy.blockSize=512KB"
+      ]
+    },
+    "H743123": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 5,
+      "core_instance_count_daily": 5,
+      "partition_multiplier": "0.5"
+    },
+    "H770635": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 10,
+      "core_instance_count_daily": 10,
+      "partition_multiplier": "1",
+      "spark_configs": [
+        "spark.sql.broadcastTimeout=3600",
+        "spark.shuffle.registration.timeout=120000",
+        "spark.shuffle.registration.maxAttempts=5",
+        "spark.stage.maxConsecutiveAttempts=10",
+        "spark.shuffle.file.buffer=1MB",
+        "spark.io.compression.snappy.blockSize=512KB"
+      ]
+    },
+    "H772763": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 5,
+      "core_instance_count_daily": 5,
+      "partition_multiplier": "1"
+    },
+    "H834852": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 8,
+      "core_instance_count_daily": 8,
+      "partition_multiplier": "0.5"
+    },
+    "H941216": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 20,
+      "core_instance_count_daily": 20,
+      "partition_multiplier": "1",
+      "spark_configs": [
+        "spark.sql.broadcastTimeout=3600",
+        "spark.sql.shuffle.partitions=400",
+        "spark.shuffle.registration.timeout=120000",
+        "spark.shuffle.registration.maxAttempts=5",
+        "spark.stage.maxConsecutiveAttempts=10",
+        "spark.shuffle.file.buffer=1MB",
+        "spark.io.compression.snappy.blockSize=512KB"
+      ]
+    },
+    "H942522": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 20,
+      "core_instance_count_daily": 20
+    },
+    "H969755": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 12,
+      "core_instance_count_daily": 12,
+      "partition_multiplier": "1"
+    },
+    "H973241": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 20,
+      "core_instance_count_daily": 20,
+      "partition_multiplier": "1"
+    },
+    "H984216": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 40,
+      "core_instance_count_daily": 60,
+      "partition_multiplier": "4",
+      "spark_configs": [
+        "spark.sql.broadcastTimeout=3600",
+        "spark.sql.shuffle.partitions=1600",
+        "spark.shuffle.registration.timeout=120000",
+        "spark.shuffle.registration.maxAttempts=5",
+        "spark.stage.maxConsecutiveAttempts=10",
+        "spark.shuffle.file.buffer=1MB",
+        "spark.io.compression.snappy.blockSize=512KB"
+      ]
+    },
+    "H993781": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 20,
+      "core_instance_count_daily": 20,
+      "partition_multiplier": "0.5"
+    },
+    "H171867": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 10,
+      "core_instance_count_daily": 10,
+      "partition_multiplier": "0.5"
+    },
+    "H171267": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 8,
+      "core_instance_count_daily": 8,
+      "partition_multiplier": "0.5",
+      "spark_configs": [
+        "spark.sql.broadcastTimeout=3600",
+        "spark.sql.shuffle.partitions=120",
+        "spark.shuffle.registration.timeout=120000",
+        "spark.shuffle.registration.maxAttempts=5",
+        "spark.stage.maxConsecutiveAttempts=10",
+        "spark.shuffle.file.buffer=1MB",
+        "spark.io.compression.snappy.blockSize=512KB"
+      ]
+    },
+    "H178829": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 5,
+      "core_instance_count_daily": 5,
+      "partition_multiplier": "0.5"
+    },
+    "H523461": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 5,
+      "core_instance_count_daily": 5,
+      "partition_multiplier": "0.5"
+    },
+    "H770494": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 8,
+      "core_instance_count_daily": 8,
+      "partition_multiplier": "0.5",
+      "spark_configs": [
+        "spark.sql.broadcastTimeout=3600",
+        "spark.sql.shuffle.partitions=120",
+        "spark.shuffle.registration.timeout=120000",
+        "spark.shuffle.registration.maxAttempts=5",
+        "spark.stage.maxConsecutiveAttempts=10",
+        "spark.shuffle.file.buffer=1MB",
+        "spark.io.compression.snappy.blockSize=512KB"
+      ]
+    },
+    "H969581": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 5,
+      "core_instance_count_daily": 5,
+      "partition_multiplier": "1"
+    },
+    "H236119": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 10,
+      "core_instance_count_daily": 10,
+      "partition_multiplier": "1"
+    },
+    "H969222": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 15,
+      "core_instance_count_daily": 15,
+      "partition_multiplier": "1"
+    },
+    "H641171": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "core_instance_count_monthly": 20,
+      "core_instance_count_daily": 20,
+      "partition_multiplier": "1",
+      "spark_configs": [
+        "spark.sql.broadcastTimeout=3600",
+        "spark.sql.shuffle.partitions=210",
+        "spark.shuffle.registration.timeout=120000",
+        "spark.shuffle.registration.maxAttempts=5",
+        "spark.stage.maxConsecutiveAttempts=10",
+        "spark.shuffle.file.buffer=1MB",
+        "spark.io.compression.snappy.blockSize=512KB"
+      ]
+    },
+     "H328218": {
+      "aws_onprem_daily": false,
+      "aws_onprem_monthly": true,
+      "aws_emr_daily": true,
+      "partition_multiplier": "1",
+      "core_instance_count_monthly": 40,
+      "core_instance_count_daily": 20,
+      "spark_configs": [
+        "spark.sql.broadcastTimeout=3600",
+        "spark.sql.shuffle.partitions=400",
+        "spark.shuffle.registration.timeout=120000",
+        "spark.shuffle.registration.maxAttempts=5",
+        "spark.stage.maxConsecutiveAttempts=10",
+        "spark.shuffle.file.buffer=1MB",
+        "spark.io.compression.snappy.blockSize=512KB"
+      ]
+    }
+  },
+  "default": {
+    "aws_onprem_daily": false,
+    "aws_onprem_monthly": true,
+    "aws_emr_daily": true,
+    "core_instance_count_monthly": 5,
+    "core_instance_count_daily": 5,
+    "partition_multiplier": "1",
+    "spark_configs": [
+        "spark.sql.broadcastTimeout=3600",
+        "spark.sql.shuffle.partitions=100",
+        "spark.shuffle.registration.timeout=120000",
+        "spark.shuffle.registration.maxAttempts=5",
+        "spark.stage.maxConsecutiveAttempts=10",
+        "spark.shuffle.file.buffer=1MB",
+        "spark.io.compression.snappy.blockSize=512KB"
+    ]
+  }
+}
+
